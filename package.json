@@ -1,0 +1,48 @@
+{
+  "name": "fast-start",
+  "version": "1.0.0",
+  "description": "Набор включенных технологий: Jade, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.5.1",
+    "imagemin-pngquant": "^5.0.1",
+    "postcss-assets": "^5.0.0",
+    "postcss-fixes": "^2.0.1",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-short": "^4.1.0",
+    "postcss-sorting": "^3.0.2",
+    "rimraf": "^2.6.2",
+    "stylefmt": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKD47/fast-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKD47/fast-start/issues"
+  },
+  "homepage": "https://github.com/AKD47/fast-start#readme"
+}

@@ -1,48 +1,48 @@
 {
-  "name": "fast-start",
+  "name": "stadion",
   "version": "1.0.0",
   "description": "Набор включенных технологий: Jade, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
   "main": "gulpfile.js",
-  "dependencies": {
-    "autoprefixer": "^7.1.5",
-    "browser-sync": "^2.18.13",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.23.6",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-cache": "^0.4.6",
+    "gulp-cache": "^1.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.4.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-jade": "^1.1.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^7.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sass": "^3.2.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.0",
+    "gulp-svgstore": "^6.1.1",
     "gulp-uglifyjs": "^0.6.2",
-    "gulp.spritesmith": "^6.5.1",
+    "gulp.spritesmith": "^6.9.0",
     "imagemin-pngquant": "^5.0.1",
     "postcss-assets": "^5.0.0",
     "postcss-fixes": "^2.0.1",
     "postcss-font-magician": "^2.1.0",
     "postcss-short": "^4.1.0",
-    "postcss-sorting": "^3.0.2",
+    "postcss-sorting": "^3.1.0",
     "rimraf": "^2.6.2",
     "stylefmt": "^6.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AKD47/fast-start.git"
+    "url": "git+https://github.com/AKD47/stadion.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AKD47/fast-start/issues"
+    "url": "https://github.com/AKD47/stadion/issues"
   },
-  "homepage": "https://github.com/AKD47/fast-start#readme"
+  "homepage": "https://github.com/AKD47/stadion#readme"
 }

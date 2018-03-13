@@ -1,0 +1,19 @@
+.narrow-banner{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 248px;
+    overflow: hidden;
+
+    img, svg {
+      size: 100%;
+      object-fit: cover;
+    }
+  }
+}

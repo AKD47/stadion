@@ -1,0 +1,60 @@
+.top-news {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include box-sizing(border-box);
+
+    &--main {
+      position: relative;
+      float: left;
+      width: 60%;
+      height: 641px;
+      overflow: hidden;
+
+      img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--second {
+      @include display-flex(flex);
+      @include flex-wrap(wrap);
+      @include flex-direction(column);
+      @include justify-content(space-between);
+      position: relative;
+      float: left;
+      width: 40%;
+      overflow: hidden;
+      padding-left: 20px;
+      @include box-sizing(border-box);
+    }
+
+    &--item {
+      flex: 1 0 0;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

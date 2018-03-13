@@ -1,7 +1,6 @@
 .container {
     box-sizing: border-box;
-    padding-right: 35px;
-    padding-left: 35px;
+
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -28,5 +27,7 @@
 @media (min-width: 1200px) {
     .container {
         width: 100%;
+        padding-right: 35px;
+        padding-left: 35px;
     }
 }

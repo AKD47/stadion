@@ -66,4 +66,62 @@
       }
     }
   }
+  
+  &__sign {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-image: url('../img/foot_line_bg.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    &--wrapper {
+      @include display-flex(flex);
+      @include flex-wrap(wrap);
+      @include flex-direction(row);
+      @include justify-content(space-around);
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    &--art {
+      position: relative;
+      float: left;
+      width: 33.33%;
+      color: white;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 18px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+
+      &:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+
+  &__socialc {
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: 7px;
+
+    > a {
+      position: relative;
+      float: left;
+      width: 35px;
+      height: 35px;
+      margin: 0 6px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }

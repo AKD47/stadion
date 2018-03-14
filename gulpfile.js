@@ -112,7 +112,8 @@ gulp.task('jade', function() {
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('./public'))
+        .pipe(browserSync.stream({}));
 });
 
 gulp.task('watch', ['compress', 'jade', 'css-libs', 'img', 'sass'], function () {

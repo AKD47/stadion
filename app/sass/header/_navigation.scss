@@ -43,22 +43,11 @@
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
-
-
-        &:after {
-          display: block;
-          position: absolute;
-          content: '';
-          width: 0;
-          height: 2px;
-          background-color: #fff;
-          @include transition(0.4s);
-        }
+        @include transition(0.4s);
       }
 
-      a:hover:after {
-        width: calc(100% - 24px);
-        width: -moz-calc(100% - 24px);
+      a:hover {
+        color: #fae548;
       }
     }
     

@@ -1,0 +1,61 @@
+.day-news {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include box-sizing(border-box);
+
+  &__wrapper {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    position: relative;
+    float: left;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__element {
+    flex: 1 1 25%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding: 0 15px;
+    @include box-sizing(border-box);
+
+    > .photo {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 290px;
+      overflow: hidden;
+
+      > img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__banner {
+    flex: 3 3 10%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding: 0 15px;
+    
+    > .banner {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 100%;
+      background-color: #c0272d;
+
+      > img, svg {
+        size: 100%;
+      }
+    }
+  }
+}

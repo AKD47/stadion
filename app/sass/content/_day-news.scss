@@ -4,7 +4,6 @@
   width: 100%;
   background-color: #fff;
   padding-top: 20px;
-  padding-bottom: 20px;
   @include box-sizing(border-box);
 
   &__wrapper {
@@ -18,24 +17,121 @@
   }
 
   &__element {
-    flex: 1 1 25%;
+    flex: 1 1 20%;
     position: relative;
     float: left;
     overflow: hidden;
-    padding: 0 15px;
+    margin: 0 15px;
     @include box-sizing(border-box);
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: calc(100% - 81px);
+      width: -moz-calc(100% - 81px);
+      height: 1px;
+      background-color: #7e272d;
+    }
 
     > .photo {
       position: relative;
       float: left;
       width: 100%;
-      height: 290px;
+      height: 190px;
       overflow: hidden;
 
       > img, svg {
         size: 100%;
         object-fit: cover;
       }
+    }
+
+    > .section {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+      border-bottom: 1px solid #808080;
+
+      .section--name {
+        position: relative;
+        float: left;
+        width: 50%;
+        color: grey;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      .section--date {
+        position: relative;
+        float: left;
+        width: 50%;
+        color: grey;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+
+    > .title {
+      display: block;
+      display: -webkit-box;
+      position: relative;
+      float: left;
+      width: 100%;
+      //max-height: auto;
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: #7e272d;
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 1;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+    }
+
+    > .descr {
+      display: block;
+      display: -webkit-box;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      color: #666;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+    }
+
+    > .more {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 81px;
+      height: 23px;
+      text-align: center;
+      line-height: 25px;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      background-image: url('../img/read-more_bg-2.png');
+      background-repeat: no-repeat;
     }
   }
 
@@ -44,7 +140,7 @@
     position: relative;
     float: left;
     overflow: hidden;
-    padding: 0 15px;
+    margin: 0 15px;
     
     > .banner {
       position: relative;
@@ -56,6 +152,37 @@
       > img, svg {
         size: 100%;
       }
+    }
+  }
+
+  &__more, &__more:hover {
+    position: relative;
+    float: right;
+    width: 275px;
+    height: 38px;
+    margin-top: 20px;
+    background-color: #7e272d;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 36px;
+    z-index: 1;
+
+    &:after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -11px;
+      background-color: #7e272d;
+      z-index: -1;
+      -webkit-transform: skew(-30deg);
+      -moz-transform: skew(-30deg);
+      -o-transform: skew(-30deg);
     }
   }
 }

@@ -25,4 +25,25 @@
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+
+  > li {
+
+    > a {
+      border: none;
+      cursor: pointer;
+      color: #7e272d;
+      font-size: 20px;
+      font-weight: 700;
+      &:hover {
+        background-color: transparent;
+        color: #fae548;
+      }
+      
+      > img {
+        margin-top: -4px;
+      }
+    }
+  }
 }

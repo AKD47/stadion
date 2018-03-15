@@ -1,0 +1,204 @@
+.article {
+  position: relative;
+  float: left;
+  width: 100%;
+
+  &__wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    @include box-sizing(border-box);
+  }
+
+  &__left{
+    position: relative;
+    float: left;
+    width: 40%;
+  }
+
+  &__slider-for {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &--slide {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__slider-nav {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 132px;
+
+    &--slide {
+      position: relative;
+      float: left;
+      width: calc(20% - 10px);
+      width: -moz-calc(20% - 10px);
+      height: 100%;
+      overflow: hidden;
+      border: 1px solid #7e272d;
+
+      img, svg {
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__right{
+    position: relative;
+    float: left;
+    width: 60%;
+    padding-left: 40px;
+    @include box-sizing(bprder-box);
+
+    > .section {
+      position: relative;
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #808080;
+
+      .section--name {
+        position: relative;
+        float: left;
+        width: 50%;
+        color: grey;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      .section--date {
+        position: relative;
+        float: left;
+        width: 50%;
+        color: grey;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+
+    > .title {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #7e272d;
+      font-size: 38px;
+      font-weight: 300;
+    }
+
+    > p {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    > .link {
+      position: relative;
+      float: left;
+      width: 86px;
+      height: 23px;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #7e272d;
+      line-height: 23px;
+      margin-right: 25px;
+      z-index: 1;
+      
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 8px;
+        background-color: #7e272d;
+        -webkit-transform: skew(-30deg);
+        -moz-transform: skew(-30deg);
+        -o-transform: skew(-30deg);
+        z-index: -1;
+      }
+
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -8px;
+        background-color: #7e272d;
+        -webkit-transform: skew(-30deg);
+        -moz-transform: skew(-30deg);
+        -o-transform: skew(-30deg);
+        z-index: -1;
+      }
+    }
+    
+    > .link:first-of-type:before{
+      display: none;
+    }
+
+    > .author {
+      position: relative;
+      float: right;
+      margin-top: 6px;
+      padding-right: 72px;
+      @include box-sizing(border-box);
+      color: black;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -20px;
+        right: 0;
+        width: 52px;
+        height: 33px;
+        background-image: url('../img/icons/author-icon.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

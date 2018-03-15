@@ -22,7 +22,7 @@
   &__news-block {
     position: relative;
     float: left;
-    width: 60%;
+    width: 70%;
     background-color: #fff;
 
     @include breakpoint(max-width 700px) {
@@ -40,7 +40,7 @@
       > .photo {
         position: relative;
         float: left;
-        width: 50%;
+        width: 40%;
         height: 290px;
         overflow: hidden;
         padding-right: 30px;
@@ -61,7 +61,7 @@
       > .descr {
         position: relative;
         float: left;
-        width: 50%;
+        width: 60%;
         padding-right: 80px;
         @include box-sizing(border-box);
 
@@ -164,7 +164,7 @@
   &__banner {
     position: relative;
     float: left;
-    width: 40%;
+    width: 30%;
     background-color: #f2f2f2;
     padding: 25px 0;
     @include box-sizing(border-box);

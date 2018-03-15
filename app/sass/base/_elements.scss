@@ -14,3 +14,15 @@
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 }
+
+.pagination {
+  @include display-flex(flex);
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include justify-content(center);
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -21,6 +21,13 @@
       margin-left: 35px;
       font-size: 14px;
       font-weight: 600;
+
+      @include breakpoint(max-width 700px){
+        width: 100%;
+        margin-bottom: 9px;
+        margin-left: 0;
+        text-align: center;
+      }
     }
   }
 
@@ -69,6 +76,10 @@
     @include box-sizing(border-box);
     background-color: #ececec;
 
+    @include breakpoint(max-width 700px){
+      padding-right: 0;
+    }
+
     &--wrapper {
       @include display-flex(flex);
       @include flex-wrap(wrap);
@@ -77,6 +88,11 @@
       float: left;
       width: calc(100% - 170px);
       width: -moz-calc(100% - 170px);
+
+      @include breakpoint(max-width 700px){
+        width: 100%;
+        @include flex-direction(column);
+      }
 
       &:after {
         display: block;
@@ -109,6 +125,11 @@
         padding: 7px 0;
         @include box-sizing(border-box);
         background-color: #fae548;
+
+        @include breakpoint(max-width 700px) {
+          margin-top: 0;
+          margin-right: 0;
+        }
       }
     }
 
@@ -206,10 +227,18 @@
     overflow: hidden;
     z-index: 2;
 
+    @include breakpoint(max-width 700px) {
+      width: 84px;
+      height: 128px;
+    }
+
     img, svg {
       size: 100%;
       object-fit: contain;
       margin-left: -16px;
+      @include breakpoint(max-width 700px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -220,6 +249,10 @@
     background-color: #ececec;
     overflow: hidden;
     margin-top: -34px;
+
+    @include breakpoint(max-width 700px) {
+      margin-top: 0;
+    }
   }
 
   &__translation {
@@ -232,6 +265,10 @@
     -webkit-transform: skew(-23deg);
     -moz-transform: skew(-23deg);
     -o-transform: skew(-23deg);
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+    }
 
     > .play {
       display: block;
@@ -249,6 +286,10 @@
       background: -webkit-linear-gradient(top, #4c4c4c 0%, #2c2c2c 0%, #474747 1%, #595959 1%, #666666 25%, #2b2b2b 80%, #1c1c1c 98%, #111111 100%, #000000 100%, #131313 100%, #000000 100%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom, #4c4c4c 0%, #2c2c2c 0%, #474747 1%, #595959 1%, #666666 25%, #2b2b2b 80%, #1c1c1c 98%, #111111 100%, #000000 100%, #131313 100%, #000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#000000', GradientType=0); /* IE6-9 */
+
+      @include breakpoint(max-width 700px) {
+        margin-left: 16px;
+      }
 
       &:after {
         display: block;
@@ -290,8 +331,14 @@
     display: block;
     position: relative;
     float: right;
-    right: -383px;
+    margin-right: -383px;
     @include transition(0.4s);
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 5px;
+    }
 
     &--trigger {
       position: relative;
@@ -314,6 +361,11 @@
       padding-left: 10px;
       padding-right: 10px;
       @include box-sizing(border-box);
+
+      @include breakpoint(max-width 700px) {
+        width: calc(100% - 36px);
+        width: -moz-calc(100% - 36px);
+      }
     }
 
     &--submit {
@@ -328,6 +380,11 @@
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
+
+      @include breakpoint(max-width 700px) {
+        width: 100%;
+        margin: 5px 0;
+      }
     }
   }
 }

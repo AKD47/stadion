@@ -34,7 +34,7 @@
   &__kabinet {
     position: relative;
     float: right;
-    width: 156px;
+    width: 170px;
     height: 32px;
     background-image: url('../img/icons/user-kabinet-btn-icon.png');
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@
       background-color: #e0e0e0;
       > span {
         color: black;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
         margin-left: 5px;
       }
@@ -188,7 +188,7 @@
       width: 100%;
       padding: 0;
       padding-top: 10px;
-      padding-bottom: 8px;
+      padding-bottom: 14px;
       list-style: none;
       margin: 0;
       background-color: #ececec;
@@ -359,7 +359,7 @@
     display: block;
     position: relative;
     float: right;
-    margin-right: -383px;
+    margin-right: -398px;
     @include transition(0.4s);
 
     @include breakpoint(max-width 700px) {

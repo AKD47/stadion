@@ -4,7 +4,7 @@
     position: relative;
     float: left;
     width: 100%;
-    margin-top: -86px;
+    margin-top: -81px;
     z-index: 1;
 
     @include breakpoint(max-width 1024px) {
@@ -58,7 +58,7 @@
         padding-left: 12px;
         padding-right: 12px;
         color: white;
-        font-size: 19px;
+        font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;

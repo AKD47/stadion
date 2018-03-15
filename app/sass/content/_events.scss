@@ -156,6 +156,12 @@
           text-transform: uppercase;
           background-image: url('../img/read-more_bg-2.png');
           background-repeat: no-repeat;
+          @include transition(0.4s);
+
+          &:hover {
+            color: white;
+            box-shadow: -8px 9px 14px -6px #000000;
+          }
         }
       }
     }

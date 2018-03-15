@@ -223,6 +223,7 @@
         @include transition(0.4s);
 
         &:hover {
+          color: white;
           box-shadow: -8px 9px 14px -6px #000000;
         }
       }

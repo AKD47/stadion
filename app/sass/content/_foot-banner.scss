@@ -1,0 +1,27 @@
+.foot-banner {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #f8f8f8;
+
+  &__wrapper {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    @include justify-content(center);
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include box-sizing(border-box);
+  }
+
+  &__element {
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 210px;
+    background-color: #c0272d;
+  }
+}

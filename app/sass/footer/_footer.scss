@@ -19,6 +19,11 @@
     height: 177px;
     overflow: hidden;
 
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      height: 100px;
+    }
+
     img, svg {
       size: 100%;
       object-fit: cover;
@@ -36,6 +41,13 @@
     padding-right: 36px;
     @include box-sizing(border-box);
     list-style: none;
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     > li {
       position: relative;
@@ -97,8 +109,20 @@
       margin-top: 24px;
       margin-bottom: 8px;
 
+      @include breakpoint(max-width 700px) {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
       &:nth-child(2) {
         width: 40%;
+
+        @include breakpoint(max-width 700px) {
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -108,6 +132,12 @@
     position: relative;
     float: right;
     margin-top: 7px;
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     > a {
       position: relative;

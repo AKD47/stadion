@@ -330,6 +330,12 @@
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%;
 
+        @include breakpoint(max-width 1024px) {
+          top: 60%;
+          background-color: #3e0608;
+          background-image: none;
+        }
+
         @include breakpoint(max-width 700px) {
           top: 40px;
           background-color: #3e0608;
@@ -358,6 +364,10 @@
           color: white;
           font-size: 23px;
           font-weight: 400;
+
+          @include breakpoint(max-width 990px) {
+            font-size: 18px;
+          }
 
           @include breakpoint(max-width 700px) {
             font-size: 18px;
@@ -407,6 +417,10 @@
       background-color: #f2f2f2;
       z-index: 1;
 
+      @include breakpoint(max-width 1024px) {
+        width: 60%;
+      }
+
       @include breakpoint(max-width 700px) {
         width: 100%;
       }
@@ -443,6 +457,11 @@
         font-size: 24px;
         font-weight: 700;
 
+        @include breakpoint(max-width 990px) {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+
         @include breakpoint(max-width 700px) {
           margin-top: 5px;
           font-size: 16px;
@@ -460,6 +479,10 @@
         color: #7e272d;
         font-size: 33px;
         font-weight: 400;
+
+        @include breakpoint(max-width 990px) {
+          font-size: 18px;
+        }
 
         @include breakpoint(max-width 700px) {
           font-size: 18px;
@@ -486,6 +509,11 @@
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
 
+        @include breakpoint(max-width 990px) {
+          height: calc(14px * 1.6 * 4);
+          -webkit-line-clamp: 4;
+        }
+
         @include breakpoint(max-width 700px) {
           height: calc(14px * 1.6 * 3);
           -webkit-line-clamp: 3;
@@ -503,6 +531,10 @@
         -webkit-background-size: cover;
         background-size: cover;
 
+        @include breakpoint(max-width 990px) {
+          height: 40px;
+        }
+
         > .more__value {
           position: relative;
           float: left;
@@ -512,6 +544,11 @@
           color: #7e272d;
           font-size: 50px;
           font-weight: 400;
+
+          @include breakpoint(max-width 990px) {
+            line-height: 40px;
+            font-size: 36px;
+          }
         }
 
         > .more__link {
@@ -530,6 +567,11 @@
           background-repeat: no-repeat;
           -webkit-background-size: cover;
           background-size: cover;
+
+          @include breakpoint(max-width 990px) {
+            font-size: 14px;
+            padding-top: 12px;
+          }
         }
       }
     }

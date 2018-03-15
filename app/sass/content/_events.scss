@@ -117,6 +117,11 @@
           overflow: hidden;
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
+
+          @include breakpoint(max-width 990px) {
+            font-size: 20px;
+            -webkit-line-clamp: 3;
+          }
         }
 
         > .descr {
@@ -176,6 +181,11 @@
       height: 600px;
       background-color: #c0272d;
       margin-left: calc(50% - (300px / 2));
+
+      @include breakpoint(max-width 990px) {
+        width: 100%;
+        margin-left: 0;
+      }
     }
   }
 

@@ -7,6 +7,10 @@
     margin-top: -86px;
     z-index: 1;
 
+    @include breakpoint(max-width 1024px) {
+      margin-top: 0;
+    }
+
     @include breakpoint(max-width 700px) {
       margin-top: 0;
     }
@@ -25,6 +29,10 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+
+    @include breakpoint(max-width 1024px) {
+      padding-left: 0;
+    }
 
     @include breakpoint(max-width 700px) {
       padding-left: 0;
@@ -70,6 +78,10 @@
       width: 36px;
       height: 100%;
       background-color: #c0272d;
+
+      @include breakpoint(max-width 1024px) {
+        display: none;
+      }
     }
   }
 }

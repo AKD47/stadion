@@ -109,6 +109,10 @@
       margin-top: 24px;
       margin-bottom: 8px;
 
+      @include breakpoint(max-width 1024px) {
+        width: 26%;
+      }
+
       @include breakpoint(max-width 700px) {
         width: 100%;
         margin-top: 10px;

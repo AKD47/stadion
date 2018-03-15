@@ -76,6 +76,9 @@
     @include box-sizing(border-box);
     background-color: #ececec;
 
+    @include breakpoint(max-width 1024px){
+      padding-right: 0;
+    }
     @include breakpoint(max-width 700px){
       padding-right: 0;
     }
@@ -88,6 +91,10 @@
       float: left;
       width: calc(100% - 170px);
       width: -moz-calc(100% - 170px);
+
+      @include breakpoint(max-width 990px) {
+        width: 100%;
+      }
 
       @include breakpoint(max-width 700px){
         width: 100%;
@@ -109,6 +116,10 @@
         @include breakpoint(max-width 700px) {
           display: none;
         }
+
+        @include breakpoint(max-width 1024px){
+          display: none;
+        }
       }
     }
 
@@ -116,6 +127,10 @@
       flex: 1 0 0;
       position: relative;
       float: left;
+
+      @include breakpoint(max-width 1024px){
+        flex: 1 0 30%;
+      }
 
       > .title {
         color: #7e272d;
@@ -231,6 +246,11 @@
     overflow: hidden;
     z-index: 2;
 
+    @include breakpoint(max-width 990px) {
+      width: 100%;
+      height: 160px;
+    }
+
     @include breakpoint(max-width 700px) {
       width: 100%;
       height: 128px;
@@ -253,6 +273,10 @@
     background-color: #ececec;
     overflow: hidden;
     margin-top: -34px;
+
+    @include breakpoint(max-width 1024px) {
+      margin-top: 0;
+    }
 
     @include breakpoint(max-width 700px) {
       margin-top: 0;

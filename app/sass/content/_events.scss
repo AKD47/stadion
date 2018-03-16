@@ -169,6 +169,24 @@
         }
       }
     }
+
+    &--banner {
+      @include display-flex(flex);
+      @include flex-wrap(wrap);
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-bottom: 50px;
+
+      > .banner {
+        position: relative;
+        float: left;
+        width: 80%;
+        height: 310px;
+        overflow: hidden;
+        background-color: #c0272d;
+      }
+    }
   }
 
   &__banner {

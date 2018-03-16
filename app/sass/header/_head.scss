@@ -34,7 +34,7 @@
   &__kabinet {
     position: relative;
     float: right;
-    width: 170px;
+    width: 150px;
     height: 32px;
     background-image: url('../img/icons/user-kabinet-btn-icon.png');
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
       float: left;
       width: 17px;
       height: 17px;
-      margin-left: 10px;
+      margin-left: 4px;
       margin-top: 6px;
       overflow: hidden;
       background-image: url('../img/icons/user-kabinet-icon.png');
@@ -359,7 +359,7 @@
     display: block;
     position: relative;
     float: right;
-    margin-right: -398px;
+    margin-right: -384px;
     @include transition(0.4s);
 
     @include breakpoint(max-width 700px) {

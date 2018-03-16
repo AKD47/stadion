@@ -33,7 +33,11 @@ html
 
                         .events__news-block--item
                             .photo
-                                img(src='img/events-4.png' alt='photo')
+                                video(controls="controls" poster="img/events-4.png")
+                                    source(src="" type='video/ogg; codecs="theora, vorbis"')
+                                    source(src="" type='video/mp4; codecs="theora, vorbis"')
+                                    source(src="" type='video/webm; codecs="theora, vorbis"')
+
                             .descr
                                 .section
                                     span.section--name vodní sporty
@@ -105,7 +109,11 @@ html
 
                         .events__news-block--item
                             .photo
-                                img(src='img/events-4.png' alt='photo')
+                                video(loop="loop" controls="controls" poster="img/events-4.png")
+                                    source(src="" type='video/ogg; codecs="theora, vorbis"')
+                                    source(src="" type='video/mp4; codecs="theora, vorbis"')
+                                    source(src="" type='video/webm; codecs="theora, vorbis"')
+
                             .descr
                                 .section
                                     span.section--name fotbal

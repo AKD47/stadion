@@ -22,6 +22,20 @@
     }
   }
 
+  &__video {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 4px solid #7e272d;
+
+    img, svg, video {
+      size: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__slider-for {
     position: relative;
     float: left;

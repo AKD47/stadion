@@ -202,7 +202,7 @@
   &__more {
     position: relative;
     float: left;
-    width: 198px;
+    width: 160px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 36px;
@@ -235,8 +235,8 @@
     display: block;
     position: relative;
     float: left;
-    width: calc(100% - (198px + 36px + 50px));
-    width: -moz-calc(100% - (198px + 36px + 50px));
+    width: calc(100% - (160px + 36px + 50px));
+    width: -moz-calc(100% - (160px + 36px + 50px));
     height: 38px;
     background-image: url('../img/archive-title-bg.png');
     background-repeat: no-repeat;

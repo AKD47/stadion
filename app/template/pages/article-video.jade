@@ -3,7 +3,170 @@ html
     head(lang='en')
         include ../html_open
     body
-        include ../header
+        header.header
+            .header__top
+                p.header__top--title Nejlepší online magazín o sportu.
+
+                a.header__kabinet(href='#')
+                    span.title Přihlášení
+                    span.icon
+
+            .header__middle
+                a.header__logo(href='index.html')
+                    img(src='img/icons/head-logo.png' alt='logo')
+
+                .header__middle--wrapper
+                    .header__middle--item
+                        p.title všechny výsledky
+
+                    .header__middle--item
+                        h3.header__middle--subtitle Lední hokej:
+                            span Mistrovství světa v hokeji
+                        ul.header__middle--list
+                            li
+                                span 13. 5. 	Švýcarsko – Finsko
+                                span 2:3 pp
+                            li.notice
+                                span 13. 5. 	Dánsko – Švédsko
+                                span 2:4
+                            li
+                                span 13. 5. 	Francie – Česko
+                                span 2:5
+                            li.notice
+                                span 13. 5. 	Slovensko – USA
+                                span 1:6
+
+                    .header__middle--item
+                        h3.header__middle--subtitle Fotbal:
+                            span 1. Liga
+                        ul.header__middle--list.white
+                            li
+                                span 13. 5.	Teplice – Bohemians 1905
+                                span 1:0
+                            li.notice
+                                span 13. 5.	Slávia – Dukla
+                                span 2:2
+                            li
+                                span 13. 5.	Zlín – Jihlava
+                                span 0:3
+                            li.notice
+                                span 13. 5.	Hradec – Slovácko
+                                span 2:1
+
+                    .header__middle--item
+                        h3.header__middle--subtitle Fotbal:
+                            span 1. Liga
+                        ul.header__middle--list.white
+                            li
+                                span 13. 5.	Teplice – Bohemians 1905
+                                span 1:0
+                            li.notice
+                                span 13. 5.	Slávia – Dukla
+                                span 2:2
+                            li
+                                span 13. 5.	Zlín – Jihlava
+                                span 0:3
+                            li.notice
+                                span 13. 5.	Hradec – Slovácko
+                                span 2:1
+
+                    .header__middle--item
+                        h3.header__middle--subtitle Fotbal:
+                            span Premier League
+                        ul.header__middle--list
+                            li
+                                span 13. 5	Tottenham – Manchester Utd.
+                                span 2:1
+                            li.notice
+                                span 13. 5	West Ham – Liverpool
+                                span 0:4
+                            li
+                                span 13. 5	Crystal Palace – Hull
+                                span 4:0
+                            li.notice
+                                span 13. 5	Stoke – Arsenal
+                                span 1:4
+
+                    .header__middle--item
+                        h3.header__middle--subtitle Tenis:
+                            span INTERNAZIONALI BNL D'ITALIA 2017
+                        ul.header__middle--list.white
+                            li
+                                span 13. 5	Nišikori (7-Jap.) - Ferrer (Šp.)
+                                span 2:1
+                            li.notice
+                                span 13. 5	Almagro (Šp.) - Nadal (4-Šp.)
+                                span 0:3
+                            li
+                                span 13. 5	Kerberová (Něm.) - Kontaveitová (Est.)
+                                span 3:0
+                            li.notice
+                                span 13. 5	Wawrinka (3-Švýc.) - Paire (Fr.)
+                                span 1:2
+
+            nav.header__navigation
+                ul.header__nav
+                    li
+                        a(href='football.html') události
+                    li
+                        a(href='football.html') Fotbal
+                    li
+                        a(href='football.html') Hokej
+                    li
+                        a(href='football.html') Tenis
+                    li
+                        a(href='football.html') Stolní tenis
+                    li
+                        a(href='football.html') Basketbal
+                    li
+                        a(href='football.html') Volejbal
+                    li
+                        a(href='football.html') Házená
+                    li
+                        a(href='football.html') Golf
+                    li
+                        a(href='football.html') Motorismus
+                    li
+                        a(href='football.html') Ostatní sporty
+
+            .header__foot
+                .header__translation
+                    button.play
+                    span.title Živé vysílání
+
+                ul.header__types
+                    li
+                        a(href='#') HET liga
+                    li
+                        a(href='#').active Euro 2020
+                    li
+                        a(href='#') Liga Mistrů
+                    li
+                        a(href='#') Evropská liga
+                    li
+                        a(href='#') MOL Cup
+
+                form.header__search
+                    a(href='#').header__search--trigger
+                    input(type='text' placeholder='').header__search--field
+                    input(type='submit' value='search').header__search--submit
+
+            ul.header__submenu
+                li
+                    a(href='#') Výsledkový servis
+                li
+                    a(href='#') Články
+                li
+                    a(href='#').active Živé vysílání
+                li
+                    a(href='#') Streaming
+                li
+                    a(href='#') Fotky
+                li
+                    a(href='#') Videa
+                li
+                    a(href='#') Program
+
         section.article
             .container
                 .article__wrap
@@ -21,10 +184,9 @@ html
                         .section
                             span.section--name fotbal
                             span.section--date 22.10.2018
-                        h3.title Všechno se upeklo během dvou dnů
+                        h3.title Všechno se upeklo
+                            strong  během dvou dnů
 
-                        p Jak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se. ak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se.
-                        p Jak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se. ak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se.
                         p Jak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se. ak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se.
                         p Jak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se. ak poukazuje, jednání se dalo do chodu velmi rychle. „Kodaň se ozvala po zápase s Jabloncem a všechno se dohodlo během dvou dnů. Všechny nás překvapilo, jak to bylo rychlé. Ve Slavii jsem necelý půlrok a podávám slušné výkony, což je asi přesvědčilo. Koukali se i na reprezentaci a říkali, že mě sledovali i v Teplicích. Byla to rychlá akce," usmívá se.
 

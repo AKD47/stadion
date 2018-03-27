@@ -22,7 +22,7 @@
       font-size: 14px;
       font-weight: 600;
 
-      @include breakpoint(max-width 700px){
+      @include breakpoint(max-width 700px) {
         width: 100%;
         margin-bottom: 9px;
         margin-left: 0;
@@ -56,11 +56,10 @@
     }
 
     > .icon {
-      position: relative;
-      float: left;
+      position: absolute;
       width: 17px;
       height: 17px;
-      margin-left: 4px;
+      right: 9px;
       margin-top: 6px;
       overflow: hidden;
       background-image: url('../img/icons/user-kabinet-icon.png');
@@ -76,10 +75,10 @@
     @include box-sizing(border-box);
     background-color: #ececec;
 
-    @include breakpoint(max-width 1024px){
+    @include breakpoint(max-width 1024px) {
       padding-right: 0;
     }
-    @include breakpoint(max-width 700px){
+    @include breakpoint(max-width 700px) {
       padding-right: 0;
     }
 
@@ -96,7 +95,7 @@
         width: 100%;
       }
 
-      @include breakpoint(max-width 700px){
+      @include breakpoint(max-width 700px) {
         width: 100%;
         @include flex-direction(column);
       }
@@ -117,7 +116,7 @@
           display: none;
         }
 
-        @include breakpoint(max-width 1024px){
+        @include breakpoint(max-width 1024px) {
           display: none;
         }
       }
@@ -128,7 +127,7 @@
       position: relative;
       float: left;
 
-      @include breakpoint(max-width 1024px){
+      @include breakpoint(max-width 1024px) {
         flex: 1 0 30%;
       }
 
@@ -306,9 +305,10 @@
       height: 100%;
       margin-left: 166px;
       border: none;
-      -webkit-transform: skew(-23deg);
-      -moz-transform: skew(-23deg);
-      -o-transform: skew(-23deg);
+      -webkit-transform: skew(-5deg);
+      -moz-transform: skew(-5deg);
+      -o-transform: skew(-5deg);
+      transform: skew(-5deg);
       background: #4c4c4c; /* Old browsers */
       background: -moz-linear-gradient(top, #4c4c4c 0%, #2c2c2c 0%, #474747 1%, #595959 1%, #666666 25%, #2b2b2b 80%, #1c1c1c 98%, #111111 100%, #000000 100%, #131313 100%, #000000 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top, #4c4c4c 0%, #2c2c2c 0%, #474747 1%, #595959 1%, #666666 25%, #2b2b2b 80%, #1c1c1c 98%, #111111 100%, #000000 100%, #131313 100%, #000000 100%); /* Chrome10-25,Safari5.1-6 */
@@ -330,9 +330,10 @@
         background-image: url('../img/icons/play-icon.png');
         background-repeat: no-repeat;
         //background-position: 49px 11px;
-        -webkit-transform: skew(38deg);
-        -moz-transform: skew(38deg);
-        -o-transform: skew(38deg);
+        -webkit-transform: skew(26deg);
+        -moz-transform: skew(26deg);
+        -o-transform: skew(26deg);
+        transform: skew(26deg);
       }
 
       &:focus {

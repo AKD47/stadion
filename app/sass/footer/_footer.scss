@@ -104,13 +104,17 @@
       width: 33.33%;
       color: white;
       font-size: 13px;
-      font-weight: 900;
+      font-weight: 300;
       line-height: 18px;
       margin-top: 24px;
       margin-bottom: 8px;
 
       @include breakpoint(max-width 1024px) {
         width: 26%;
+      }
+
+      strong {
+        font-weight: 700;
       }
 
       @include breakpoint(max-width 700px) {

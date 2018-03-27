@@ -23,5 +23,11 @@
     width: 60%;
     height: 210px;
     background-color: #c0272d;
+    overflow: hidden;
+
+    > img, svg {
+      size: 100%;
+      object-fit: contain;
+    }
   }
 }

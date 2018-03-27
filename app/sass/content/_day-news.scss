@@ -63,6 +63,19 @@
       > img, svg {
         size: 100%;
         object-fit: cover;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
+
+      > .icon {
+        display: block;
+        position: absolute;
+        width: 52px;
+        height: 32px;
+        top: 8px;
+        left: 0;
+        background-image: url('../img/icons/author-icon.png');
+        background-repeat: no-repeat;
       }
     }
 
@@ -106,7 +119,7 @@
       margin-top: 10px;
       margin-bottom: 0;
       color: #7e272d;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 300;
       line-height: 1;
       -webkit-line-clamp: 3;
@@ -114,6 +127,10 @@
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
+
+      strong {
+        font-weight: 700;
+      }
     }
 
     > .descr {
@@ -171,6 +188,7 @@
 
       > img, svg {
         size: 100%;
+        object-fit: contain;
       }
     }
   }

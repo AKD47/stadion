@@ -19,5 +19,21 @@
       size: 100%;
       object-fit: cover;
     }
+
+    h3 {
+      position: absolute;
+      top: 66px;
+      right: 15%;
+      color: white;
+      font-size: 53px;
+      font-weight: 400;
+
+      @include breakpoint(max-width 1024px){
+        font-size: 28px;
+      }
+      @include breakpoint(max-width 770px){
+        font-size: 20px;
+      }
+    }
   }
 }

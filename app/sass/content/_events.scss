@@ -128,6 +128,10 @@
             font-size: 20px;
             -webkit-line-clamp: 3;
           }
+
+          strong {
+            font-weight: 700;
+          }
         }
 
         > .descr {
@@ -215,6 +219,11 @@
       @include breakpoint(max-width 990px) {
         width: 100%;
         margin-left: 0;
+      }
+
+      > img, svg {
+        size: 100%;
+        object-fit: contain;
       }
     }
   }

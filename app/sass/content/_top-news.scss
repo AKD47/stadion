@@ -248,7 +248,7 @@
           font-size: 19px;
           font-weight: 400;
         }
-        
+
         > .name {
           display: block;
           position: relative;
@@ -259,7 +259,7 @@
           font-weight: 400;
           text-transform: uppercase;
         }
-        
+
         &:before {
           display: block;
           position: absolute;
@@ -324,7 +324,7 @@
         top: 70%;
         width: 90%;
         margin: auto;
-        padding-top: 8px;
+        padding-top: 14px;
         background-color: transparent;
         background-image: url('../img/second-news-title-bg.png');
         background-repeat: no-repeat;
@@ -388,6 +388,29 @@
         }
         &:after {
           display: none;
+        }
+
+        > .icon {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          top: 4px;
+          right: 15px;
+          background-image: url('../img/icons/news-main-play-icon.png');
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
+
+          @include breakpoint(max-width 1024px) {
+            top: 14px;
+            right: 11px;
+          }
+          @include breakpoint(max-width 900px) {
+            display: none;
+          }
         }
       }
     }

@@ -1,0 +1,58 @@
+.footer {
+  position: relative;
+  float: left;
+  width: 100%;
+
+  &__bg {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    &--copyright {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      margin: 0;
+      color: white;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 18px;
+
+      @include breakpoint(max-width 700px) {
+        position: relative;
+        float: left;
+        width: 100%;
+        //margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &--title {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      color: white;
+      font-size: 13px;
+      font-weight: 400;
+
+      @include breakpoint(max-width 700px) {
+        float: left;
+      }
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+}

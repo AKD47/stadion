@@ -1,0 +1,545 @@
+.top {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: -50px;
+
+  @include breakpoint(max-width 700px) {
+    margin-top: 0;
+    padding: 0 10px;
+    @include box-sizing(border-box);
+  }
+
+  &__left {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-right: 50px;
+    @include box-sizing(border-box);
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .banner__title {
+      display: none;
+      position: relative;
+      float: left;
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+      font-size: 32px;
+
+      @include breakpoint(max-width 700px) {
+        display: block;
+      }
+    }
+
+    &--title {
+      position: relative;
+      float: left;
+      width: 100%;
+      text-align: right;
+      margin-top: 0;
+      margin-bottom: 50px;
+      font-size: 30px;
+      color: #656363;
+      font-weight: 300;
+
+      @include breakpoint(max-width 700px) {
+        width: calc(100% - 85px);
+        width: -moz-calc(100% - 85px);
+        font-size: 19px;
+        padding-top: 21px;
+        box-sizing: border-box;
+      }
+      
+      br {
+        @include breakpoint(max-width 700px) {
+          display: none;
+        }
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &--title:nth-of-type(2) {
+
+      @include breakpoint(max-width 700px) {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--title:nth-of-type(3) {
+
+      @include breakpoint(max-width 700px) {
+        width: calc(100% - 85px);
+        width: -moz-calc(100% - 85px);
+        text-align: left;
+        margin-bottom: 10px;
+        //margin-right: 42px;
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+    @include box-sizing(border-box);
+
+    @include breakpoint(max-width 700px) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__form {
+    position: relative;
+    float: left;
+    width: 100%;
+
+    &--title {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 21px;
+      color: #656363;
+      font-size: 30px;
+    }
+
+    &--fields-wrapper {
+      position: relative;
+      float: left;
+      width: 276px;
+
+      @include breakpoint(max-width 700px) {
+        width: 100%;
+      }
+
+      .checkbox__email-notice {
+        display: none;
+        position: absolute;
+        width: 220px;
+        left: 0;
+        top: 56px;
+        background-color: #fff;
+        border: 1px solid #ea4541;
+        @include box-shadow(5px 7px 19px -4px #000000);
+        padding: 20px;
+        @include box-sizing(border-box);
+        z-index: 2;
+
+        @include breakpoint(max-width 700px) {
+          width: 100%;
+        }
+
+        &:before {
+          position: absolute;
+          content: '';
+          width: 45px;
+          height: 34px;
+          top: -16px;
+          left: 0;
+          background-image: url('../img/icons/close-modal-mobile-icon.png');
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+
+        p {
+          position: relative;
+          float: left;
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+          font-weight: 300;
+          color: #656363;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .pass-value {
+        display: none;
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &__title {
+          position: relative;
+          float: left;
+          width: 100%;
+          font-size: 11px;
+          color: #656363;
+        }
+
+        &__gool-line {
+          position: relative;
+          float: left;
+          width: 33%;
+          height: 6px;
+          margin-top: 10px;
+          background-color: #f7931e;
+          z-index: 2;
+
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            right: -12px;
+            margin-top: -5px;
+            width: 14px;
+            height: 14px;
+            background-image: url('../img/icons/ball-icon.png');
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+        }
+
+        &__line {
+          position: relative;
+          float: left;
+          width: 33%;
+          height: 6px;
+          margin-top: 10px;
+          background-color: #f7931e;
+          z-index: 2;
+
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            right: -12px;
+            margin-top: -5px;
+            width: 14px;
+            height: 14px;
+            background-image: url('../img/icons/ball-icon.png');
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+        }
+        
+        &__final {
+          position: absolute;
+          width: 54px;
+          height: 33px;
+          right: 0;
+          margin-top: 7px;
+          background-image: url('../img/icons/foot-goal-icon.png');
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+      }
+
+      .pass-value.strong {
+
+        .pass-value__gool-line {
+          width: 85%;
+          background-color: #8cc63f;
+        }
+
+        .pass-value__final:after {
+          display: block;
+          position: absolute;
+          content: 'Goool!';
+          margin-top: 5px;
+          right: -41px;
+          color: #8cc63f;
+          font-weight: 600;
+
+          @include breakpoint(max-width 700px) {
+            margin-top: -22px;
+            right: 7px;
+          }
+        }
+      }
+
+      .pass-value {
+        //display: none;
+
+        .pass-value__line {
+          width: 33%;
+          height: 7px;
+          background-color: #ed312d;
+
+          //&:after {
+          //  display: none;
+          //}
+        }
+      }
+
+      .pass-value.strong {
+
+        .pass-value__line {
+          width: 85%;
+          background-color: #8cc63f;
+        }
+      }
+    }
+
+    &--field {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 42px;
+      margin-bottom: 21px;
+      padding-left: 20px;
+      padding-right: 10px;
+      @include box-sizing(border-box);
+      border: none;
+      background-color: #eee822;
+      color: black;
+      font-size: 22px;
+      font-weight: 300;
+
+      &.first, &.first:-webkit-autofill {
+        background-image: url('../img/field-bg-1.png')!important;
+        background-color: #eee822!important;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+      }
+
+      &.second {
+        background-image: url('../img/field-bg-2.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+      }
+
+      &.third {
+        background-image: url('../img/field-bg-3.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+      }
+    }
+
+    //&--field:-webkit-autofill {
+    //  background: #eee822!important;
+    //  color: black;
+    //  font-size: 22px;
+    //  font-weight: 300;
+    //}
+    
+    &--submit {
+      position: relative;
+      float: left;
+      margin-right: calc(100% - 132px);
+      width: 132px;
+      height: 42px;
+      background-color: #ed312d;
+      color: #ebe640;
+      font-size: 22px;
+      font-weight: 300;
+      border-radius: 0;
+      border: none;
+      cursor: pointer;
+
+      @include breakpoint(max-width 1200px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &--labels {
+      position: relative;
+      float: left;
+      width: calc(100% - 276px);
+      width: -moz-calc(100% - 276px);
+      padding-left: 50px;
+      padding-right: 50px;
+      @include box-sizing(border-box);
+
+      @include breakpoint(max-width 1200px) {
+        width: 100%;
+        padding: 0;
+      }
+
+      @include breakpoint(max-width 700px) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &--label {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+      padding-left: 61px;
+      @include box-sizing(border-box);
+      font-size: 16px;
+      font-weight: 300;
+      color: #656363;
+
+      a {
+        color: #656363;
+        font-weight: 600;
+      }
+    }
+
+    &--line {
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 0;
+
+      .checkbox {
+        display: none;
+      }
+
+      .checkbox + .for-checkbox {
+        position: relative;
+        float: left;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #eee822;
+        cursor: pointer;
+      }
+
+      .checkbox:checked + .for-checkbox {
+        background-image: url('../img/icons/checkbox-sprite.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: 26px 26px;
+        background-size: 26px 26px;
+        background-position: 7px 8px;
+      }
+
+      .checkbox-label {
+        position: relative;
+        float: left;
+        width: calc(100% - 44px);
+        width: -moz-calc(100% - 44px);
+        padding-left: 20px;
+        @include box-sizing(border-box);
+        font-size: 16px;
+        font-weight: 300;
+        color: #656363;
+
+        a {
+          color: #656363;
+          font-weight: 600;
+        }
+      }
+
+      .checkbox__notice {
+        display: none;
+        position: absolute;
+        width: 320px;
+        left: 0;
+        top: 56px;
+        background-color: #fff;
+        border: 1px solid #ea4541;
+        @include box-shadow(5px 7px 19px -4px #000000);
+        padding: 20px;
+        @include box-sizing(border-box);
+        z-index: 2;
+
+        @include breakpoint(max-width 700px) {
+          width: 100%;
+        }
+
+        &:before {
+          position: absolute;
+          content: '';
+          width: 45px;
+          height: 34px;
+          top: -16px;
+          left: 0;
+          background-image: url('../img/icons/close-modal-mobile-icon.png');
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+
+        p {
+          position: relative;
+          float: left;
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+          font-weight: 300;
+          color: #656363;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  &__mobile-hokkey {
+    display: none;
+    position: relative;
+    float: left;
+    width: calc(100% - 42px);
+    margin-left: 42px;
+    height: 140px;
+    overflow: hidden;
+    margin-top: -57px;
+
+    img, svg {
+      size: 100%;
+      object-fit: contain;
+    }
+
+    @include breakpoint(max-width 700px) {
+      display: block;
+    }
+  }
+
+  &__mobile-football {
+    display: none;
+    position: relative;
+    float: left;
+    width: 85px;
+    height: 94px;
+    overflow: hidden;
+    margin-top: 0;
+
+    img, svg {
+      size: 100%;
+      object-fit: contain;
+    }
+
+    @include breakpoint(max-width 700px) {
+      display: block;
+    }
+  }
+
+  &__mobile-regby {
+    display: none;
+    position: relative;
+    float: left;
+    width: 85px;
+    height: 94px;
+    overflow: hidden;
+    margin-top: 0;
+
+    img, svg {
+      size: 100%;
+      object-fit: contain;
+    }
+
+    @include breakpoint(max-width 700px) {
+      display: block;
+    }
+  }
+}

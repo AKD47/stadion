@@ -1,0 +1,58 @@
+.banner {
+  position: relative;
+  float: left;
+  width: 100%;
+
+  &__title {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+    color: #656363;
+    font-weight: 300;
+
+    @include breakpoint(max-width 700px) {
+      display: none;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: -130px;
+    overflow: hidden;
+
+    @include breakpoint(max-width 700px) {
+      display: none;
+    }
+
+    img {
+      size: 100%;
+    }
+  }
+
+  &__mobile-swimming {
+    display: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    img, svg {
+      size: 100%;
+      object-fit: contain;
+    }
+
+    @include breakpoint(max-width 600px) {
+      display: block;
+    }
+  }
+}
+

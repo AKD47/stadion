@@ -1,0 +1,45 @@
+{
+  "name": "stadion-land",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^8.5.0",
+    "browser-sync": "^2.24.4",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.9.0",
+    "imagemin-pngquant": "^5.1.0",
+    "postcss-assets": "^5.0.0",
+    "postcss-fixes": "^2.0.1",
+    "postcss-font-magician": "^2.1.1",
+    "postcss-short": "^4.1.0",
+    "postcss-sorting": "^3.1.0",
+    "rimraf": "^2.6.2",
+    "stylefmt": "^6.0.0"
+  },
+  "devDependencies": {  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://van83horn@bitbucket.org/dimatech/stadion-land.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dimatech/stadion-land#readme"
+}

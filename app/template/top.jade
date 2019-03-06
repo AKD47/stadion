@@ -1,0 +1,102 @@
+section.top
+
+    .top__mobile-hokkey
+        img(src='img/hokkey-img.png' alt='hokkey')
+
+    .top__left
+
+        .top__mobile-football
+            img(src='img/football-img.png' alt='football')
+
+        h3.top__left--title Již brzy budete mít
+            span  všechny sporty
+            br
+            span  na jednom místě
+
+        h3.top__left--title Zaregistrujte se nyní a
+            span  získejte spoustu výhod
+            br
+            | nového sportovního portálu
+            span  STADION!
+
+        h1.banner__title
+            span Fanděte
+            |  s námi!
+
+        h3.top__left--title Rádi píšete o sportu?
+            br
+            span  Staňte se naším redaktorem.
+
+        .top__mobile-regby
+            img(src='img/regby-img.png' alt='regby')
+
+    .top__right
+
+        form#main-form.top__form
+
+            h3.top__form--title Registrace
+
+            .top__form--fields-wrapper
+
+                input#main-form-email(type='text' autocomplete="off" name='email' placeholder='Váš e-mail').top__form--field.first
+                .checkbox__email-notice
+                    p Pole musí být
+                        span  vyplněneno.
+
+                input#main-form-pass(type='password' autocomplete="off" name='pass1' placeholder='Heslo').top__form--field.second
+                .pass-value
+                    span.pass-value__title Heslo je středně silné
+                    span.pass-value__gool-line
+                    span.pass-value__final
+                input#main-form-pass2(type='password' autocomplete="off" name='pass2' disabled placeholder='Potvrzení hesla').top__form--field.third
+                .pass-value
+                    span.pass-value__title Hesla se shodují
+                    span.pass-value__line
+                    span.pass-value__final
+
+            .top__form--labels
+
+                label.top__form--label Informace o ochraně osobních údajů
+                    br
+                    a(href='#')  naleznete ZDE.
+
+                #gdpr-modal.modal
+
+                    span.modal__close
+
+                    h3.modal__maintitle SOUHLAS SE ZPRACOVÁNÍM OSOBNÍCH ÚDAJŮ
+
+                    .modal__wrapper
+
+                        p Udělením tohoto souhlasu se zpracováním osobních údajů poskytujete souhlas k tomu, aby Stadion Media a. s., sídlo Vlkova 631/24, Praha 3 - Žižkov, 130 00, IČ  610 58 483,                e-mail: info@stadion.cz, tel.: 736 769 333 (dále „Správce) zpracovávala Vaše osobní údaje dle dále uvedených podmínek.
+
+                        h3 1. Osobní údaje, které budou zpracovány:
+                        p e-mailovou adresu
+
+                        h3 2. Podmínky zpracování osobních údajů Subjektu údajů:
+                        ul
+                            li Správcem osobních údajů podle Nařízení (EU) 2016/679 (GDPR) je Správce.
+                            li Vaše osobní údaje zpracováváme z důvodu registrace na webových stránkách www.stadion.cz
+                            li Zpracováváme vaše výše uvedené osobní údaje za účelem vaší registrace na webových stránkách www.stadion.cz
+                            li Právním důvodem tohoto zpracování registrace na webových stránkách www.stadion.cz. Uvedené osobní údaje za tímto účelem zpracováváme po dobu 3 let od vaší registrace.
+                            li Ochrana vašich osobních údajů odpovídá požadavkům Nařízení (EU) 2016/679 (GDPR)
+                            li Abychom mohli uchovávat vaše osobní údaje, je právní důvod vyžádat si tímto váš souhlas, který nám poskytujete a který můžete kdykoli odvolat.
+                            li Vaše osobní údaje poskytujeme jen institucím k tomu zmocněným zákonem, nikomu jinému Vaše osobní údaje bez vašeho výslovného souhlasu neposkytujeme. Tento souhlas můžete kdykoliv odvolat.
+                            li Při zpracování Vašich osobních údajů nebude docházet k automatizovanému rozhodování ani k profilování.
+                            li Nejmenovali jsem pověřence pro ochranu osobních údajů, nepověřili jsem zpracováním Vašich osobních údajů žádného zpracovatele ani neurčili zástupce pro plnění povinností ve smyslu GDPR.
+                            li Nemáme v úmyslu předat Vaše osobní údaje do třetí země, mezinárodní organizaci nebo jiným, osobám.
+                            li Kdykoliv máte právo odvolat svůj souhlas se zpracováním osobních údajů, právo požadovat od nás jako Správce přístup ke svým osobním údajům, jejich opravu nebo výmaz, popřípadě omezení zpracování, a vznést námitku proti zpracování, máte právo na přenositelnost těchto údajů k jinému správci, jakož i právo podat stížnost u Úřadu pro ochranu osobních údajů, máte-li za to, že při zpracování vašich osobních údajů postupujeme v rozporu s GDPR.
+
+                        h3 Právním důvodem tohoto zpracování registrace na webových stránkách www.stadion.cz. Uvedené osobní údaje za tímto účelem zpracováváme po dobu 3 let od vaší registrace.
+
+                .top__form--line
+                    input#gdpr(type='checkbox' name='gdpr').checkbox.invalid
+                    label(for='gdpr').for-checkbox
+                    span.checkbox-label Souhlasím se zpracováním osobních údajů dle
+                        a(href='#')  Nařízení (EU) 2016/679 (GDPR).
+
+                    .checkbox__notice
+                        p Abyste mohli registraci dokončit, musíte zaškrtnout
+                            span  souhlas se zpracováním osobních údajů.
+
+            input(type='submit' value='Odeslat').top__form--submit
